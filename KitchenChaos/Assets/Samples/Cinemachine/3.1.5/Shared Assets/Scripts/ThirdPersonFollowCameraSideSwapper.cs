@@ -1,44 +1,56 @@
-using System.Collections.Generic;
 using UnityEngine;
 
-namespace Unity.Cinemachine.Samples
+public class ThirdPersonCamera : MonoBehaviour
 {
-    public class ThirdPersonFollowCameraSideSwapper : MonoBehaviour
+    [Header("Target")]
+    public Transform target;         // Player transform
+
+    [Header("Settings")]
+    public float distance = 4f;      // How far behind player
+    public float height = 2f;        // Height offset
+    public float followSpeed = 10f;  // How smoothly camera follows
+    public float rotationSpeed = 200f;
+
+    [Header("Rotation Limits")]
+    public float minY = -30f;
+    public float maxY = 60f;
+
+    private float yaw;
+    private float pitch;
+
+    void Start()
     {
-        [Tooltip("How long the shoulder swap will take")]
-        public float Damping;
-
-        List<CinemachineThirdPersonFollow> m_ThirdPersonFollows = new();
-        float m_SwapDirection;
-
-        void OnEnable()
+        if (target != null)
         {
-            GetComponentsInChildren(true, m_ThirdPersonFollows);
+            Vector3 angles = transform.eulerAngles;
+            yaw = angles.y;
+            pitch = angles.x;
         }
+    }
 
-        void Update()
-        {
-            bool allDone = true;
-            if (m_SwapDirection != 0)
-            {
-                float swapTarget = m_SwapDirection > 0 ? 1 : 0;
-                for (int i = 0; i < m_ThirdPersonFollows.Count; ++i)
-                {
-                    m_ThirdPersonFollows[i].CameraSide +=
-                        Damper.Damp(swapTarget - m_ThirdPersonFollows[i].CameraSide, Damping, Time.deltaTime);
-                    if (Mathf.Abs(m_ThirdPersonFollows[i].CameraSide - swapTarget) > UnityVectorExtensions.Epsilon)
-                        allDone = false;
-                }
-            }
-            if (allDone)
-                m_SwapDirection = 0;
-        }
+    void LateUpdate()
+    {
+        if (!target) return;
 
-        public void Swap()
-        {
-            m_SwapDirection *= -1;
-            for (int i = 0; m_SwapDirection == 0 && i < m_ThirdPersonFollows.Count; ++i)
-                m_SwapDirection = m_ThirdPersonFollows[i].CameraSide > 0.5f ? -1 : 1;
-        }
+        // === Mouse Look ===
+        float mouseX = Input.GetAxis("Mouse X");
+        float mouseY = Input.GetAxis("Mouse Y");
+
+        yaw += mouseX * rotationSpeed * Time.deltaTime;
+        pitch -= mouseY * rotationSpeed * Time.deltaTime; 
+        pitch = Mathf.Clamp(pitch, minY, maxY);
+
+        // === Calculate rotation ===
+        Quaternion rotation = Quaternion.Euler(pitch, yaw, 0f);
+
+        // === Calculate desired camera position ===
+        Vector3 offset = rotation * new Vector3(0, height, -distance);
+        Vector3 desiredPosition = target.position + offset;
+
+        // === Smoothly move camera ===
+        transform.position = Vector3.Lerp(transform.position, desiredPosition, followSpeed * Time.deltaTime);
+
+        // === Always look at player ===
+        transform.LookAt(target.position + Vector3.up * 1.5f);
     }
 }
