@@ -1,0 +1,14 @@
+public class NewScript :
+{
+
+  void Start()
+  {
+    print("Hello")
+  }
+
+  void Update
+  {
+
+  }
+
+}

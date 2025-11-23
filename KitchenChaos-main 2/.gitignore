@@ -1,0 +1,31 @@
+# Unity
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+Logs/
+UserSettings/
+MemoryCaptures/
+Recordings/
+*.pidb
+*.suo
+*.user
+*.userprefs
+*.csproj
+*.unityproj
+*.sln
+*.tmproj
+*.booproj
+
+# OS
+.DS_Store
+*/.DS_Store
+
+# IDE
+.vs/
+.vscode/
+
+# Others
+*.zip
+*.zip.meta
