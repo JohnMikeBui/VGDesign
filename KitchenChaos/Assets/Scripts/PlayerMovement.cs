@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public float gravity = 10f;
 
     [Header("Rotation")]
-    public float rotationSpeed = 10f; // How fast player rotates to face camera direction
+    public float rotationSpeed = 3000f; // How fast player rotates to face camera direction
 
     [Header("References")]
     public Animator animator;
