@@ -158,4 +158,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4827fa2b19cb4fd5a953672ee91ed36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cutPrefab: {fileID: 0}
+  cutPrefab: {fileID: 6688072191936304851, guid: 4653fdb1254cf49f1b256bdcc990e61d, type: 3}

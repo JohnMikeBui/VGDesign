@@ -116,12 +116,22 @@ public class CuttingBoard : MonoBehaviour
         // Spawn cut version
         GameObject cutObj = Instantiate(cutData.cutPrefab, boardPoint.position, boardPoint.rotation);
 
-        // Cut version should not move
+        // Make cut version pickup-able
+        CutIngredient cutScript = cutObj.GetComponent<CutIngredient>();
+        if (cutScript == null)
+            cutScript = cutObj.AddComponent<CutIngredient>();
+
+        cutScript.ingredientName = cutObj.name.Replace("(Clone)", "").Trim();
+
+        // Freeze movement
         Rigidbody rb = cutObj.GetComponent<Rigidbody>();
-        if (rb != null)
-        {
-            rb.isKinematic = true;
-        }
+        if (rb == null) rb = cutObj.AddComponent<Rigidbody>();
+        rb.isKinematic = true;
+
+        // Enable colliders for pickup detection
+        foreach (Collider c in cutObj.GetComponentsInChildren<Collider>())
+            c.enabled = true;
+
 
         ingredientOnBoard = null;
 
