@@ -165,8 +165,33 @@ public class IngredientFlee : MonoBehaviour
         }
     }
 
-    // Called when placed on plate - permanently disable movement
-    // Called when placed on plate - permanently disable movement
+    public void PlaceOnBoard(Transform boardPoint)
+    {
+        isCaught = false;
+        isPlacedOnPlate = false;
+        holdTransform = null;
+
+        transform.SetParent(boardPoint);
+        transform.localPosition = Vector3.zero;
+        transform.localRotation = Quaternion.identity;
+
+        // Freeze movement
+        Rigidbody rb = GetComponent<Rigidbody>();
+        if (rb)
+        {
+            rb.isKinematic = true;
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+        }
+
+        // Disable fleeing behavior
+        this.enabled = false;
+
+        // Disable colliders
+        foreach (Collider col in GetComponentsInChildren<Collider>())
+            col.enabled = false;
+    }
+
     public void PlaceOnPlate()
     {
         isPlacedOnPlate = true;

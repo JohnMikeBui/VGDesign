@@ -119,18 +119,28 @@ public class IngredientInteraction : MonoBehaviour
 
     void DropHeldItem()
     {
+        // DROP RAW INGREDIENT
         if (heldIngredient != null)
         {
-            // Ingredients can't really be dropped in your system, but you could add this
-            Debug.Log("Can't drop ingredients!");
+            Vector3 dropPos = holdPoint.position + transform.forward * 1f;
+
+            heldIngredient.Release(dropPos, Quaternion.identity);
+            Debug.Log($"Dropped ingredient: {heldIngredient.name}");
+
+            heldIngredient = null;
+            return;
         }
-        else if (heldDish != null)
+
+        // DROP DISH
+        if (heldDish != null)
         {
             heldDish.Drop();
             heldDish = null;
             Debug.Log("Dropped dish!");
+            return;
         }
     }
+
 
     // Called by PlateInteraction after it handles the placement
     public void PlaceIngredientOnPlate(Transform plateTransform)

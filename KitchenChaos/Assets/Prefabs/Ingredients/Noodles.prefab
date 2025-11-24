@@ -1,0 +1,743 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1812086339743488657
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1696608591195733567}
+  - component: {fileID: -9198457550058064264}
+  - component: {fileID: -523044624310230882}
+  - component: {fileID: -1741923554711205727}
+  m_Layer: 3
+  m_Name: Noodles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1696608591195733567
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812086339743488657}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2, y: 1.675, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4141316048093646698}
+  - {fileID: 2522427898054673433}
+  - {fileID: 5079944889612822207}
+  - {fileID: 6653388874212934786}
+  - {fileID: 2209484835330334471}
+  - {fileID: 95923793655821985}
+  - {fileID: 7373643202885892916}
+  - {fileID: 899248515208360097}
+  - {fileID: 8643714460912220131}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &-9198457550058064264
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812086339743488657}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!136 &-523044624310230882
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812086339743488657}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-1741923554711205727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812086339743488657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 682e310980cf44621b56f99bc791ee01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runSpeed: 7
+  detectionRange: 5
+  wanderSpeed: 1
+  pointValue: 10
+  highlightColor: {r: 0.3, g: 0.5, b: 1, a: 1}
+  highlightIntensity: 2
+--- !u!1001 &494959813149692234
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1696608591195733567}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8899202
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.37232053
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.038134605
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.26070166
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_Name
+      value: food_ingredient_onion_rings (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+--- !u!4 &95923793655821985 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+  m_PrefabInstance: {fileID: 494959813149692234}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &860324692491753290
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1696608591195733567}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7618314
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.55451226
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.3333528
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.031701624
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 109
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -220
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_Name
+      value: food_ingredient_onion_rings (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+--- !u!4 &899248515208360097 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+  m_PrefabInstance: {fileID: 860324692491753290}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1811313178219870444
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1696608591195733567}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8899202
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.2685358
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.26070166
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.26070166
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_Name
+      value: food_ingredient_onion_rings (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+--- !u!4 &2209484835330334471 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+  m_PrefabInstance: {fileID: 1811313178219870444}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2633426772379100146
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1696608591195733567}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9848078
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.17364816
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_Name
+      value: food_ingredient_onion_rings (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+--- !u!4 &2522427898054673433 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+  m_PrefabInstance: {fileID: 2633426772379100146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4535776270159603841
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1696608591195733567}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_Name
+      value: food_ingredient_onion_rings
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+--- !u!4 &4141316048093646698 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+  m_PrefabInstance: {fileID: 4535776270159603841}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4752757256365506900
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1696608591195733567}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9603483
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.1981076
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.13871644
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.13871644
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_Name
+      value: food_ingredient_onion_rings (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+--- !u!4 &5079944889612822207 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+  m_PrefabInstance: {fileID: 4752757256365506900}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6620058989029942121
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1696608591195733567}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9216707
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.21918578
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.10220803
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.3033718
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_Name
+      value: food_ingredient_onion_rings (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+--- !u!4 &6653388874212934786 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+  m_PrefabInstance: {fileID: 6620058989029942121}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7052294039680441567
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1696608591195733567}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7151177
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.6937143
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.060692154
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.060692184
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_Name
+      value: food_ingredient_onion_rings (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+--- !u!4 &7373643202885892916 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+  m_PrefabInstance: {fileID: 7052294039680441567}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8105949347485126664
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1696608591195733567}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.021490252
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.91671884
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.34976405
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19191113
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -190
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_Name
+      value: food_ingredient_onion_rings (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+--- !u!4 &8643714460912220131 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 52c477f879b59423eb22f0e76c348bd2, type: 3}
+  m_PrefabInstance: {fileID: 8105949347485126664}
+  m_PrefabAsset: {fileID: 0}
